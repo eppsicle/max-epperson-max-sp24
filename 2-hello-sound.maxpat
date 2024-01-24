@@ -40,13 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-50",
-					"linecount" : 3,
+					"id" : "obj-52",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 811.382113337516785, 583.943089067935944, 150.0, 47.0 ],
-					"text" : "pulse width modulation\nsynthesis with these two waves"
+					"patching_rect" : [ 592.68292647600174, 619.512194752693176, 150.0, 20.0 ],
+					"text" : "hw: 20 objects project"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 811.382113337516785, 583.943089067935944, 150.0, 60.0 ],
+					"text" : "pulse width modulation with rect\nsynthesis with these two waves"
 				}
 
 			}
