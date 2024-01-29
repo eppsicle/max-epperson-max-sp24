@@ -40,12 +40,114 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 930.0, 617.0, 150.0, 33.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Celcius to Fahrenheit converter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-28",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 939.0, 692.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-24",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 819.0, 519.5, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-4",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 895.555598258972168, 835.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 895.555598258972168, 800.0, 36.0, 22.0 ],
+					"text" : "+ 32."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 895.555598258972168, 766.0, 29.5, 22.0 ],
+					"text" : "/ 5."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 895.555598258972168, 727.0, 29.5, 22.0 ],
+					"text" : "* 9."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"floatoutput" : 1,
+					"id" : "obj-11",
+					"maxclass" : "slider",
+					"min" : 1.0,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 895.555598258972168, 574.0, 20.0, 140.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-151",
 					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1190.000056743621826, 67.5, 150.0, 127.0 ],
+					"patching_rect" : [ 1190.000056743621826, 67.5, 153.0, 127.0 ],
 					"text" : "the trigger object can also be used to force a cold inlet to generate output (the trigger stroes the new integer value in the cold inlet, and the trigger sends a bang to the hot inlet to force a recalculation using the new addition number)"
 				}
 
@@ -117,7 +219,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 895.555598258972168, 302.222236633300781, 150.0, 127.0 ],
+					"patching_rect" : [ 895.555598258972168, 302.222236633300781, 153.0, 127.0 ],
 					"text" : "you can also use trigger to force a specific output\nthe argument 20 will print the number 20 before it prints the float and then the integer (the float or integer will be converted to the input that was most recently edited) "
 				}
 
@@ -272,7 +374,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 814.0, 517.0, 150.0, 33.0 ],
+					"patching_rect" : [ 811.0, 460.0, 150.0, 33.0 ],
 					"text" : "Fahrenheit to Celcius converter"
 				}
 
@@ -485,7 +587,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 401.0, 445.0, 150.0, 127.0 ],
+					"patching_rect" : [ 401.0, 445.0, 153.0, 127.0 ],
 					"text" : "slider object, visual representation of a number box\n\nslider range defaults to MIDI range, you can change it in inspector, also has automatic multiplier feature in inspector"
 				}
 
@@ -511,7 +613,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 233.0, 150.0, 74.0 ],
+					"patching_rect" : [ 307.0, 233.0, 153.0, 74.0 ],
 					"text" : "this value does not change to the cold inlet value bc it is the default value that the patch will go to when you open it"
 				}
 
@@ -920,7 +1022,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 112.0, 162.0, 150.0, 74.0 ],
+					"patching_rect" : [ 112.0, 162.0, 151.0, 74.0 ],
 					"text" : "a number box can change the value of another number box, but the output number cannot change the input"
 				}
 
@@ -1004,13 +1106,20 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 24.0, 150.0, 33.0 ],
+					"patching_rect" : [ 13.0, 24.0, 153.0, 33.0 ],
 					"text" : "number box (i) for integers or (f) for float"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
 					"source" : [ "obj-103", 0 ]
@@ -1035,6 +1144,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-109", 0 ],
 					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -1194,6 +1310,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -1203,6 +1326,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -1238,6 +1368,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -1329,6 +1466,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
 					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

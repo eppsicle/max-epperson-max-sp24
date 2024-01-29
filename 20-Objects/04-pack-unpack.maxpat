@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 838.0, 100.0, 640.0, 480.0 ],
+		"rect" : [ 295.0, 100.0, 1183.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1102.666699528694153, 457.333346962928772, 150.0, 33.0 ],
+					"text" : "changes background color of box"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-225",
 					"maxclass" : "message",
@@ -213,16 +225,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 18.0, 990.0, 150.0, 114.0 ],
 					"text" : "the zl object is a \"super-object\" that can reverse, split, and compare a list, and more\nit's nice because, unlike unpack, it does not care about the length of the incoming list"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-194",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 580.0, 150.0, 20.0 ]
 				}
 
 			}
@@ -424,7 +426,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 559.0, 900.0, 150.0, 60.0 ],
+					"patching_rect" : [ 559.0, 900.0, 151.0, 60.0 ],
 					"text" : "the unpack object lets you unpack a list and determine the data types of the inputs"
 				}
 
@@ -795,10 +797,11 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.961, 0.684, 0.0, 1.0 ],
+					"bgcolor" : [ 1.0, 0.81, 0.72, 1.0 ],
 					"bgcolor2" : [ 0.2, 0.2, 0.2, 1 ],
+					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1 ],
-					"bgfillcolor_color1" : [ 0.961, 0.684, 0.0, 1.0 ],
+					"bgfillcolor_color1" : [ 1.0, 0.81, 0.72, 1.0 ],
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1 ],
 					"bgfillcolor_type" : "gradient",
 					"gradient" : 1,
@@ -807,7 +810,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 934.0, 505.0, 51.0, 22.0 ]
+					"patching_rect" : [ 934.0, 505.0, 89.333335995674133, 22.0 ]
 				}
 
 			}
@@ -923,8 +926,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.0, 499.0, 357.0, 22.0 ],
-					"text" : "The athlete is named $1/, is $2 years old/, and makes $3 per year"
+					"patching_rect" : [ 516.0, 499.0, 367.0, 22.0 ],
+					"text" : "The athlete is $1\\, they are $2 years old\\, and they make $3 dollars."
 				}
 
 			}
@@ -959,7 +962,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 445.0, 150.0, 194.0 ],
+					"patching_rect" : [ 10.0, 445.0, 151.0, 194.0 ],
 					"text" : "what happens if you input the wrong data into a data type inlet?\n\nsymbols in number inlets will be converted to 0\n\nintegers in symbol inlets will be blank or converted to float if in float\n\nfloats in symbol inlets will be blank and truncated to int if in integer inlet"
 				}
 
@@ -1104,7 +1107,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 903.0, 150.0, 150.0, 60.0 ],
+					"patching_rect" : [ 903.0, 150.0, 151.0, 60.0 ],
 					"text" : "lists can also be fed into a pack, they will feed the contents of the list into the inlet in order"
 				}
 
@@ -1175,7 +1178,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 584.0, 117.0, 150.0, 74.0 ],
+					"patching_rect" : [ 584.0, 117.0, 153.0, 74.0 ],
 					"text" : "the arguments in pack determine the type of datat that is expecteed from an inelt and acts as a defualt value"
 				}
 
@@ -1246,7 +1249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 150.0, 114.0, 141.0 ],
+					"patching_rect" : [ 23.0, 150.0, 117.0, 141.0 ],
 					"text" : "if we want any input to generate output, we can put a bang in between the cold inlet numbers and the hot inlet\n\nthis is a pattern we often use for forcing output"
 				}
 
@@ -1270,7 +1273,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 238.0, 157.0, 150.0, 60.0 ],
+					"patching_rect" : [ 238.0, 157.0, 151.0, 60.0 ],
 					"text" : "the leftmost inlet of a pack is hot, so if you change the first input, it will send generate output"
 				}
 

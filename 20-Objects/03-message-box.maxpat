@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 818.0, 101.0, 664.0, 716.0 ],
+		"rect" : [ 814.0, 101.0, 664.0, 716.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 860.0, 126.0, 89.0, 47.0 ],
+					"patching_rect" : [ 860.0, 126.0, 92.0, 47.0 ],
 					"text" : "these accomplish the same thing"
 				}
 
@@ -81,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1068.0, 173.0, 150.0, 87.0 ],
+					"patching_rect" : [ 1068.0, 173.0, 151.0, 87.0 ],
 					"text" : "using set will change the value in this second number box without outputing the new number to the message box until we send it a bang"
 				}
 
@@ -203,7 +203,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 731.0, 472.0, 150.0, 60.0 ],
+					"patching_rect" : [ 731.0, 472.0, 152.0, 60.0 ],
 					"text" : "the flonum doesn't change the value of the integer bc the bgcolor message transforms the data"
 				}
 
@@ -401,7 +401,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 504.0, 639.0, 150.0, 74.0 ],
+					"patching_rect" : [ 504.0, 639.0, 153.0, 74.0 ],
 					"text" : "prepend and append can be used to add their arguments to the front and backs of incoming messages"
 				}
 
@@ -770,7 +770,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 9.0, 297.0, 150.0, 100.0 ],
+					"patching_rect" : [ 9.0, 297.0, 153.0, 100.0 ],
 					"text" : "messages can also hold lists, a combinations of symbols (e.g. MIDI note number, velocity, and MIDI channel), order of $n identifiers will map to the order of the inputs"
 				}
 

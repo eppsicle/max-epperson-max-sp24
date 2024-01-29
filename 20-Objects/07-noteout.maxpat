@@ -139,7 +139,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 722.0, 563.0, 150.0, 127.0 ],
+					"patching_rect" : [ 722.0, 563.0, 153.0, 127.0 ],
 					"text" : "midiin and midiparse, midiin is the input corollary to the midiout object: it receives raw MIDI and gives it to our Max patch, we use the midiparse object so we don't have to deal with raw binary MIDI code"
 				}
 
@@ -171,11 +171,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-115",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 446.0, 786.0, 87.0, 20.0 ],
-					"text" : "MIDI volume"
+					"patching_rect" : [ 445.0, 771.5, 87.0, 33.0 ],
+					"text" : "MIDI volume\nchannel 7"
 				}
 
 			}
@@ -210,7 +211,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 752.0, 117.0, 114.0 ],
+					"patching_rect" : [ 13.0, 752.0, 120.0, 114.0 ],
 					"text" : "first inlet (note input),\nthird inlet (continuous controllers)\nfourth inlet (program change, expects 0 to 127)"
 				}
 
@@ -222,7 +223,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 237.0, 1035.0, 150.0, 74.0 ],
+					"patching_rect" : [ 237.0, 1035.0, 151.0, 74.0 ],
 					"text" : "midiformat expects a list containing the note and velocity values rather than individual value, so we make it with a pack object"
 				}
 
@@ -493,7 +494,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 571.0, 150.0, 87.0 ],
+					"patching_rect" : [ 13.0, 571.0, 153.0, 87.0 ],
 					"text" : "midiformat and midiout are commonly used together and represent the easiet way to send lots of data types to a single MIDI device"
 				}
 
@@ -740,7 +741,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 495.0, 150.0, 150.0, 47.0 ],
+					"patching_rect" : [ 495.0, 150.0, 151.0, 47.0 ],
 					"text" : "this functions the same as the previous patch without the need for a pipe"
 				}
 
