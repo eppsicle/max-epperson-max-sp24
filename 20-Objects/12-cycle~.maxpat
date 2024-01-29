@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 170.0, 1361.0, 150.0, 167.0 ],
+					"patching_rect" : [ 170.0, 1361.0, 153.0, 167.0 ],
 					"text" : "pan2 abstraction allows us to do panning with fewer gain~ objects, without taking control of volume levels\ncreates equal-power pan of one signal into two output\nhas two scaling inputs, 0-127 and -1.0 to 1.0 which is convenient for calculations"
 				}
 
@@ -130,7 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 956.0, 259.0, 47.0 ],
+					"patching_rect" : [ 21.0, 956.0, 261.0, 47.0 ],
 					"text" : "the mtof object takes an integer value from 0-127 (MIDI note range) and translates it into a frequency that can be used by cycle~"
 				}
 
@@ -177,7 +177,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 758.0, 642.0, 150.0, 60.0 ],
+					"patching_rect" : [ 758.0, 642.0, 152.0, 60.0 ],
 					"text" : "do panning with reverse minus object, which instead subtracts the input from the argument"
 				}
 
@@ -213,7 +213,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 461.5, 150.0, 60.0 ],
+					"patching_rect" : [ 489.0, 461.5, 153.0, 60.0 ],
 					"text" : "we can use number box to control panning instead, use it to move sliders in contradictory directions"
 				}
 
@@ -226,7 +226,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 750.0, 573.0, 150.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "< set the minimum and maximum values to 0 and 127 in the number box inspector!"
 				}
 
@@ -338,7 +337,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.0, 655.0, 150.0, 47.0 ],
+					"patching_rect" : [ 212.0, 655.0, 151.0, 47.0 ],
 					"text" : "you can control gain~ with a number box that has its range limited"
 				}
 
@@ -474,7 +473,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 458.0, 269.0, 60.0 ],
+					"patching_rect" : [ 10.0, 458.0, 271.0, 60.0 ],
 					"text" : "if you want to do a typical mixing job of both volume control and signal combination, you'll need to do the volume control yourself, place the gain~ control before the signal combine"
 				}
 
@@ -690,11 +689,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-34",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 491.0, 277.0, 150.0, 60.0 ],
+					"patching_rect" : [ 491.0, 277.0, 153.0, 47.0 ],
 					"text" : "with this setup, the sounds are mono, the left and right audio sounds are the same"
 				}
 
@@ -716,7 +715,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 484.0, 20.0, 178.0, 47.0 ],
+					"patching_rect" : [ 484.0, 20.0, 181.0, 47.0 ],
 					"text" : "can adjust cycle~ frequency using inlet, which accepts either audio signal or flonum"
 				}
 
@@ -753,7 +752,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 452.0, 183.0, 150.0, 33.0 ],
+					"patching_rect" : [ 452.0, 183.0, 154.0, 33.0 ],
 					"text" : "different than normal slider because it has stripes "
 				}
 
@@ -953,6 +952,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 1 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"order" : 1,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -962,6 +977,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -981,6 +1003,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 1 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -990,6 +1019,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 1 ],
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -1018,6 +1054,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"order" : 0,
 					"source" : [ "obj-51", 0 ]
@@ -1041,6 +1084,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 1 ],
+					"order" : 0,
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"order" : 1,
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-60", 0 ]
 				}
@@ -1050,6 +1109,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 1 ],
+					"order" : 0,
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"order" : 1,
+					"source" : [ "obj-63", 0 ]
 				}
 
 			}
@@ -1101,6 +1176,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-84", 1 ],
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-82", 0 ]
 				}
@@ -1110,6 +1192,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-86", 0 ],
 					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"source" : [ "obj-85", 0 ]
 				}
 
 			}
