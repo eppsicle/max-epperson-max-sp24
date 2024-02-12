@@ -289,12 +289,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-70",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 802.439043521881104, 368.292691707611084, 50.0, 22.0 ],
-					"text" : "0.25"
+					"patching_rect" : [ 802.439043521881104, 368.292691707611084, 50.0, 35.0 ],
+					"text" : "0.681001"
 				}
 
 			}
@@ -390,7 +391,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.12195348739624, 353.658545017242432, 154.0, 100.0 ],
+					"patching_rect" : [ 95.12195348739624, 353.658545017242432, 157.0, 100.0 ],
 					"text" : "use number index from umenu to change the cycle~ type (1, 2, 3, 4)\nmust start at none becuase the first index is 0 and cycle does not have an option for zero"
 				}
 
@@ -485,7 +486,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 585.365867614746094, 270.731713771820068, 50.0, 22.0 ],
-					"text" : "33"
+					"text" : "51"
 				}
 
 			}
@@ -520,7 +521,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 190.24390697479248, 270.731713771820068, 50.0, 22.0 ],
-					"text" : "36"
+					"text" : "72"
 				}
 
 			}
@@ -714,7 +715,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 1150.571417689323425, 534.0, 810.0, 534.0, 810.0, 502.714285612106323, 303.0, 502.714285612106323, 303.0, 483.0, 280.231713771820068, 483.0 ],
+					"midpoints" : [ 1150.571417689323425, 534.0, 810.0, 534.0, 810.0, 497.714285612106323, 303.0, 497.714285612106323, 303.0, 483.0, 280.231713771820068, 483.0 ],
 					"source" : [ "obj-101", 0 ]
 				}
 
