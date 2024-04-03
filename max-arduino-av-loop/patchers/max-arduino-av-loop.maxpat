@@ -1975,7 +1975,7 @@
 									"timestretch" : 0,
 									"pitchshift" : 25.0,
 									"timeshift" : 1,
-									"speed" : 1.0,
+									"speed" : 2.0,
 									"play" : 0
 								}
 
@@ -1996,7 +1996,6 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 137.0, 67.0, 426.0, 35.0 ],
 					"pitchcorrection" : 0,
-					"pitchshiftcent" : [ 3986 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 90.0, 191.0, 441.0, 35.0 ],
 					"quality" : "basic",
@@ -2258,7 +2257,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 940.0, 35.0, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 925, 612, 1279, 740 ],
+						"client_rect" : [ 925, 612, 1279, 895 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
