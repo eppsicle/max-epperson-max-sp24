@@ -116,7 +116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 835.0, 23.0, 150.0, 33.0 ],
+					"patching_rect" : [ 1037.0, 49.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 151.666667819023132, 73.166666030883789, 150.0, 33.0 ],
@@ -682,7 +682,7 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 155.666675329208374, 3194.666761875152588, 128.0, 32.0 ],
-					"saturation" : 0.505882352941176
+					"saturation" : 0.345098039215686
 				}
 
 			}
@@ -1948,7 +1948,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1733.973752498626709, 300.000008940696716, 558.0, 223.0 ],
+					"patching_rect" : [ 1734.0, 279.392186641693115, 558.0, 223.0 ],
 					"varname" : "bp.Classroom Filter",
 					"viewvisibility" : 1
 				}
@@ -2380,7 +2380,7 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 137.0, 700.0, 128.0, 32.0 ],
-					"saturation" : 0.454901960784314
+					"saturation" : 0.415686274509804
 				}
 
 			}
